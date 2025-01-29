@@ -18,6 +18,16 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <audio id="bg-music" autoplay loop muted>
+      <source src="assets/music.mp3" type="audio/mpeg" />
+    </audio>
+    <script>
+      document.addEventListener("click", function () {
+        let audio = document.getElementById("bg-music");
+        audio.muted = false; // Unmute setelah klik
+        audio.play();
+      });
+    </script>
     <header data-aos="fade-down" data-aos-delay="200">
       <div class="container">
         <div class="content">
@@ -124,16 +134,22 @@
             data-aos-delay="300"
           >
             <p>
-              Hallo saya Praditya Oktanza D.W, saya adalah seorang mahasiswa di
+              Haii.. saya Praditya Oktanza D.W, saya adalah seorang mahasiswa di
               Universitas Dinamika Bangsa dengan jurusan Teknik Informasi.
+              Senang bisa memperkenalkan diri kepada anda.
             </p>
+            <hr />
             <p>
-              Ini adalah Portfolio yang saya buat untuk menyimpan project yang
-              saya buat selama perkuliahan, selain itu ini juga saya buat untuk
-              memperkenalkan diri saya.
+              "Pada akhirnya, kita hanya bisa mendapatkan apa yang kita
+              usahakan,Terimakasih karena sudah mengusahakan" -aditt
             </p>
             <button>
-              Learn More <box-icon class="arrow" name="arrow-back"></box-icon>
+              Play Music
+              <box-icon
+                type="solid"
+                name="music"
+                style="fill: yellow"
+              ></box-icon>
             </button>
           </div>
 
