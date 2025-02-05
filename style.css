@@ -521,6 +521,14 @@ header .container .content .extra-nav a:hover span {
   -webkit-text-stroke-color: var(--white);
 }
 
+button a {
+  color: white;
+}
+
+button a:hover {
+  color: black;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
